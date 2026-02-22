@@ -652,7 +652,7 @@ export default function ReadingPage() {
                             {/* Combined Card 1 & 2 - Context Flow + Sentence Fit (Side by Side) - Spans 2 columns */}
                             <div className="md:col-span-2 rounded-3xl shadow-2xl shadow-blue-900/20 overflow-hidden min-h-[400px] flex hover-card-lift group">
                                 {/* Left Section - Context Flow (Dark Blue) */}
-                                <Link href="/reading/conjunctions" className="bg-gradient-to-br from-[#0f172a] via-[#1e3a8a] to-[#3b82f6] p-20 relative flex-1 rounded-r-3xl z-20 shadow-[10px_0_30px_rgba(0,0,0,0.3)] transition-transform duration-500 group-hover:scale-[1.02] block">
+                                <Link href="https://text-completion-p.vercel.app/" target="_blank" rel="noopener noreferrer" className="bg-gradient-to-br from-[#0f172a] via-[#1e3a8a] to-[#3b82f6] p-20 relative flex-1 rounded-r-3xl z-20 shadow-[10px_0_30px_rgba(0,0,0,0.3)] transition-transform duration-500 group-hover:scale-[1.02] block">
                                     <div className="flex items-center gap-4 mb-6">
                                         <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-lg transition-transform duration-500 group-hover:rotate-12 group-hover:scale-110">
                                             <span className="text-[#1e3a8a] text-2xl font-black">P</span>
