@@ -666,7 +666,7 @@ export default function ReadingPage() {
                                 </Link>
 
                                 {/* Right Section - Sentence Fit (White) */}
-                                <Link href="/reading/conjunctive-adverbs" className="bg-white p-20 relative flex-1 shadow-[inset_0_8px_20px_rgba(0,0,0,0.05)] block hover:bg-slate-50 transition-colors">
+                                <Link href="https://text-completion-r.vercel.app/" target="_blank" rel="noopener noreferrer" className="bg-white p-20 relative flex-1 shadow-[inset_0_8px_20px_rgba(0,0,0,0.05)] block hover:bg-slate-50 transition-colors">
                                     <div className="flex items-center gap-4 mb-6">
                                         <div className="w-12 h-12 bg-[#1e3a8a] rounded-full flex items-center justify-center shadow-lg transition-transform duration-500 group-hover:-rotate-12 group-hover:scale-110">
                                             <span className="text-white text-2xl font-black">R</span>
@@ -1333,68 +1333,72 @@ export default function ReadingPage() {
 
                             {/* Card 2: Part 6 */}
                             <div className="flex flex-col gap-6">
-                                <div className="bg-white rounded-[32px] p-8 pb-10 shadow-xl border border-blue-50 relative overflow-hidden group hover:-translate-y-2 transition-transform duration-300 flex flex-col min-h-[600px]">
-                                    {/* Header */}
-                                    <div className="relative z-10 mb-12">
-                                        <div className="flex items-center gap-3 mb-2">
-                                            <div className="w-8 h-8 rounded-full bg-[#1e3a8a] text-white flex items-center justify-center font-bold text-sm shrink-0">2</div>
-                                            <h3 className="text-3xl font-bold text-[#1e3a8a]">Part 6</h3>
-                                        </div>
-                                        <p className="text-blue-400 font-medium pl-11 mb-6">Text Completion</p>
-
-                                        {/* Custom Divider */}
-                                        {/* Animated Divider */}
-                                        <div className="px-3 mb-2">
-                                            <div className="h-1.5 w-full bg-slate-100 rounded-full relative overflow-hidden">
-                                                <div className="absolute top-0 left-0 h-full w-2/5 bg-[#1e3a8a] rounded-full animate-slide-bar"></div>
+                                <Link href="https://simulation-test-part-6-c3qo.vercel.app/" target="_blank" rel="noopener noreferrer" className="block">
+                                    <div className="bg-white rounded-[32px] p-8 pb-10 shadow-xl border border-blue-50 relative overflow-hidden group hover:-translate-y-2 transition-transform duration-300 flex flex-col min-h-[600px]">
+                                        {/* Header */}
+                                        <div className="relative z-10 mb-12">
+                                            <div className="flex items-center gap-3 mb-2">
+                                                <div className="w-8 h-8 rounded-full bg-[#1e3a8a] text-white flex items-center justify-center font-bold text-sm shrink-0">2</div>
+                                                <h3 className="text-3xl font-bold text-[#1e3a8a]">Part 6</h3>
                                             </div>
-                                        </div>
-                                    </div>
+                                            <p className="text-blue-400 font-medium pl-11 mb-6">Text Completion</p>
 
-                                    {/* Visual Background (Two Large Circles) */}
-                                    <div className="absolute inset-0 pointer-events-none overflow-hidden">
-                                        {/* Top Right Circle */}
-                                        <div className="absolute -top-24 -right-24 w-[450px] h-[450px] bg-gradient-to-bl from-blue-50 to-blue-200 rounded-full opacity-80" />
-                                        {/* Bottom Left Circle */}
-                                        <div className="absolute -bottom-24 -left-24 w-[450px] h-[450px] bg-gradient-to-tr from-blue-200 to-blue-50 rounded-full opacity-80" />
-                                    </div>
-
-                                    {/* Bottom List */}
-                                    <div className="mt-auto relative z-10">
-                                        <div className="bg-blue-50/50 rounded-2xl p-6 space-y-4">
-                                            <div className="flex items-center justify-between border-b border-blue-100 pb-3">
-                                                <span className="text-slate-600 font-medium text-sm">접속사/관계대명사</span>
-                                                <span className="text-[#1e3a8a] font-bold text-sm">2 min</span>
-                                            </div>
-                                            <div className="flex items-center justify-between border-b border-blue-100 pb-3">
-                                                <span className="text-slate-600 font-medium text-sm">접속 부사</span>
-                                                <span className="text-[#1e3a8a] font-bold text-sm">2 min</span>
-                                            </div>
-                                            <div className="flex items-center justify-between pt-1">
-                                                <span className="text-slate-600 font-medium text-sm">준동사</span>
-                                                <span className="text-[#1e3a8a] font-bold text-sm">2 min</span>
+                                            {/* Custom Divider */}
+                                            {/* Animated Divider */}
+                                            <div className="px-3 mb-2">
+                                                <div className="h-1.5 w-full bg-slate-100 rounded-full relative overflow-hidden">
+                                                    <div className="absolute top-0 left-0 h-full w-2/5 bg-[#1e3a8a] rounded-full animate-slide-bar"></div>
+                                                </div>
                                             </div>
                                         </div>
 
+                                        {/* Visual Background (Two Large Circles) */}
+                                        <div className="absolute inset-0 pointer-events-none overflow-hidden">
+                                            {/* Top Right Circle */}
+                                            <div className="absolute -top-24 -right-24 w-[450px] h-[450px] bg-gradient-to-bl from-blue-50 to-blue-200 rounded-full opacity-80" />
+                                            {/* Bottom Left Circle */}
+                                            <div className="absolute -bottom-24 -left-24 w-[450px] h-[450px] bg-gradient-to-tr from-blue-200 to-blue-50 rounded-full opacity-80" />
+                                        </div>
 
+                                        {/* Bottom List */}
+                                        <div className="mt-auto relative z-10">
+                                            <div className="bg-blue-50/50 rounded-2xl p-6 space-y-4">
+                                                <div className="flex items-center justify-between border-b border-blue-100 pb-3">
+                                                    <span className="text-slate-600 font-medium text-sm">접속사/관계대명사</span>
+                                                    <span className="text-[#1e3a8a] font-bold text-sm">2 min</span>
+                                                </div>
+                                                <div className="flex items-center justify-between border-b border-blue-100 pb-3">
+                                                    <span className="text-slate-600 font-medium text-sm">접속 부사</span>
+                                                    <span className="text-[#1e3a8a] font-bold text-sm">2 min</span>
+                                                </div>
+                                                <div className="flex items-center justify-between pt-1">
+                                                    <span className="text-slate-600 font-medium text-sm">준동사</span>
+                                                    <span className="text-[#1e3a8a] font-bold text-sm">2 min</span>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
                                     </div>
-                                </div>
+                                </Link>
                                 {/* Arrow Button Step 2 */}
-                                <div className="w-full h-28 relative shadow-xl group cursor-pointer transition-transform hover:scale-[1.02]"
-                                    style={{ clipPath: 'polygon(0% 0%, 93% 0%, 100% 50%, 93% 100%, 0% 100%)' }}>
-                                    {/* Arrow-shaped Color Stages */}
-                                    <div className="absolute inset-0 bg-[#1d4ed8]" />
-                                    <div className="absolute inset-0 bg-[#3b82f6]" style={{ clipPath: 'polygon(0% 0%, 75% 0%, 82% 50%, 75% 100%, 0% 100%)' }} />
-                                    <div className="absolute inset-0 bg-[#60a5fa]" style={{ clipPath: 'polygon(0% 0%, 50% 0%, 57% 50%, 50% 100%, 0% 100%)' }} />
-                                    <div className="absolute inset-0 bg-[#93c5fd]" style={{ clipPath: 'polygon(0% 0%, 25% 0%, 32% 50%, 25% 100%, 0% 100%)' }} />
-                                    <div className="absolute inset-0 flex items-center justify-between px-8 pr-12">
-                                        <span className="text-white font-black text-3xl drop-shadow-lg tracking-wider">Step 2</span>
-                                        <div className="bg-white/20 backdrop-blur-md border-2 border-white/40 rounded-full pl-5 pr-3 py-2 flex items-center gap-3 group-hover:bg-white/30 transition-colors">
-                                            <span className="text-white text-xs font-black uppercase tracking-[0.2em]">Start</span>
-                                            <ArrowRight className="w-6 h-6 text-white" strokeWidth={5} />
+                                <Link href="https://simulation-test-part-6-c3qo.vercel.app/" target="_blank" rel="noopener noreferrer" className="block">
+                                    <div className="w-full h-28 relative shadow-xl group cursor-pointer transition-transform hover:scale-[1.02]"
+                                        style={{ clipPath: 'polygon(0% 0%, 93% 0%, 100% 50%, 93% 100%, 0% 100%)' }}>
+                                        {/* Arrow-shaped Color Stages */}
+                                        <div className="absolute inset-0 bg-[#1d4ed8]" />
+                                        <div className="absolute inset-0 bg-[#3b82f6]" style={{ clipPath: 'polygon(0% 0%, 75% 0%, 82% 50%, 75% 100%, 0% 100%)' }} />
+                                        <div className="absolute inset-0 bg-[#60a5fa]" style={{ clipPath: 'polygon(0% 0%, 50% 0%, 57% 50%, 50% 100%, 0% 100%)' }} />
+                                        <div className="absolute inset-0 bg-[#93c5fd]" style={{ clipPath: 'polygon(0% 0%, 25% 0%, 32% 50%, 25% 100%, 0% 100%)' }} />
+                                        <div className="absolute inset-0 flex items-center justify-between px-8 pr-12">
+                                            <span className="text-white font-black text-3xl drop-shadow-lg tracking-wider">Step 2</span>
+                                            <div className="bg-white/20 backdrop-blur-md border-2 border-white/40 rounded-full pl-5 pr-3 py-2 flex items-center gap-3 group-hover:bg-white/30 transition-colors">
+                                                <span className="text-white text-xs font-black uppercase tracking-[0.2em]">Start</span>
+                                                <ArrowRight className="w-6 h-6 text-white" strokeWidth={5} />
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                </Link>
                             </div>
 
                             {/* Card 3: Part 7 */}

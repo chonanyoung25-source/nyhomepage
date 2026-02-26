@@ -134,144 +134,133 @@ export default function Home() {
       </section>
 
       <div className="w-full bg-white text-slate-800">
-        <div className="mx-auto max-w-6xl space-y-32 px-4 py-24 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-[1400px] space-y-32 px-4 py-24 sm:px-6 lg:px-8">
           <section
             id="structure"
             className="flex flex-col items-center scroll-mt-20"
           >
-            <div className="flex flex-col items-center text-center mb-12">
-              <p className="font-semibold text-primary uppercase tracking-widest text-sm">Test Overview</p>
-              <h2 className="mt-2 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
-                토익 시험 구성 및 배점
-              </h2>
-            </div>
 
-            <div className="w-full rounded-3xl bg-slate-50/50 p-6 md:p-10 shadow-xl shadow-slate-200/50 ring-1 ring-slate-100">
-              <div className="overflow-x-auto pb-4">
-                <table className="w-full border-separate border-spacing-y-4 border-spacing-x-2 text-left min-w-[900px]">
-                  <thead>
+
+            <div className="w-full rounded-[32px] bg-slate-50 p-6 md:p-12 border border-slate-100 relative shadow-inner">
+              {/* Table Header Title */}
+              <div className="flex justify-center mb-12">
+                <h3 className="text-5xl font-bold text-slate-800 tracking-tight">
+                  토익 기본 구성
+                </h3>
+              </div>
+              <div className="overflow-x-visible relative z-10">
+                <table className="w-full border-separate border-spacing-y-4 border-spacing-x-4 text-left table-fixed">
+                  <tbody>
+                    {/* Part Header Row */}
                     <tr>
-                      <th className="rounded-2xl bg-gradient-to-b from-blue-500 to-blue-600 px-6 py-5 text-[13px] font-bold uppercase tracking-wider text-white shadow-lg shadow-blue-500/30 text-center align-middle">
-                        영역
+                      <th className="w-[14%] bg-white border border-slate-100 rounded-none p-6 text-center shadow-sm">
+                        <span className="text-xl font-black text-slate-700">파트</span>
                       </th>
-                      <th className="rounded-2xl bg-gradient-to-b from-indigo-500 to-purple-600 px-6 py-5 text-[13px] font-bold uppercase tracking-wider text-white shadow-lg shadow-indigo-500/30 text-center align-middle">
-                        파트
-                      </th>
-                      <th className="rounded-2xl bg-gradient-to-b from-purple-500 to-fuchsia-600 px-6 py-5 text-[13px] font-bold uppercase tracking-wider text-white shadow-lg shadow-purple-500/30 text-center align-middle">
-                        문항 번호
-                      </th>
-                      <th className="rounded-2xl bg-gradient-to-b from-fuchsia-500 to-pink-600 px-6 py-5 text-[13px] font-bold uppercase tracking-wider text-white shadow-lg shadow-pink-500/30 text-center align-middle">
-                        문항 수
-                      </th>
-                      <th className="rounded-2xl bg-gradient-to-b from-rose-500 to-orange-500 px-6 py-5 text-[13px] font-bold uppercase tracking-wider text-white shadow-lg shadow-orange-500/30 text-center align-middle">
-                        주요 내용
-                      </th>
-                      <th className="rounded-2xl bg-gradient-to-b from-amber-400 to-orange-500 px-6 py-5 text-[13px] font-bold uppercase tracking-wider text-white shadow-lg shadow-amber-500/30 text-center align-middle">
-                        소요 시간
-                      </th>
-                      <th className="rounded-2xl bg-gradient-to-b from-emerald-400 to-teal-500 px-6 py-5 text-[13px] font-bold uppercase tracking-wider text-white shadow-lg shadow-emerald-500/30 text-center align-middle">
-                        배점
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody className="space-y-4 text-sm">
-                    {/* Part 1 */}
-                    <tr className="group transition-all hover:-translate-y-1">
-                      <td className="rounded-2xl bg-white px-6 py-5 text-center font-black text-slate-800 shadow-sm border border-slate-100 group-hover:shadow-md transition-all" rowSpan={4}>
-                        <div className="flex flex-col items-center justify-center gap-1">
-                          <span className="text-xl">LC</span>
-                          <span className="rounded-full bg-blue-100 px-2.5 py-0.5 text-[10px] font-bold text-blue-700">듣기</span>
-                        </div>
-                      </td>
-                      <td className="rounded-l-2xl bg-white px-6 py-5 font-bold text-slate-700 shadow-sm border-y border-l border-slate-100 group-hover:shadow-md transition-all text-center">Part 1</td>
-                      <td className="bg-white px-6 py-5 text-center font-mono text-slate-500 shadow-sm border-y border-slate-100 group-hover:shadow-md transition-all">1 ~ 6</td>
-                      <td className="bg-white px-6 py-5 text-center font-semibold text-slate-600 shadow-sm border-y border-slate-100 group-hover:shadow-md transition-all">6문항</td>
-                      <td className="bg-white px-6 py-5 text-slate-600 shadow-sm border-y border-slate-100 group-hover:shadow-md transition-all">사진 묘사</td>
-                      <td className="rounded-2xl bg-white px-6 py-5 text-center font-bold text-slate-800 shadow-sm border border-slate-100 group-hover:shadow-md transition-all" rowSpan={4}>
-                        약 45분
-                      </td>
-                      <td className="rounded-2xl bg-white px-6 py-5 text-center font-black text-emerald-500 shadow-sm border border-slate-100 group-hover:shadow-md transition-all" rowSpan={4}>
-                        <div className="flex flex-col items-center gap-1">
-                          <span>5</span>
-                          <div className="h-0.5 w-3 bg-emerald-200"></div>
-                          <span>495점</span>
-                        </div>
-                      </td>
-                    </tr>
-                    {/* Part 2 */}
-                    <tr className="group transition-all hover:-translate-y-1">
-                      <td className="rounded-l-2xl bg-white px-6 py-5 font-bold text-slate-700 shadow-sm border-y border-l border-slate-100 group-hover:shadow-md transition-all text-center">Part 2</td>
-                      <td className="bg-white px-6 py-5 text-center font-mono text-slate-500 shadow-sm border-y border-slate-100 group-hover:shadow-md transition-all">7 ~ 31</td>
-                      <td className="bg-white px-6 py-5 text-center font-semibold text-slate-600 shadow-sm border-y border-slate-100 group-hover:shadow-md transition-all">25문항</td>
-                      <td className="rounded-r-2xl bg-white px-6 py-5 text-slate-600 shadow-sm border-y border-r border-slate-100 group-hover:shadow-md transition-all">질의 응답</td>
-                    </tr>
-                    {/* Part 3 */}
-                    <tr className="group transition-all hover:-translate-y-1">
-                      <td className="rounded-l-2xl bg-white px-6 py-5 font-bold text-slate-700 shadow-sm border-y border-l border-slate-100 group-hover:shadow-md transition-all text-center">Part 3</td>
-                      <td className="bg-white px-6 py-5 text-center font-mono text-slate-500 shadow-sm border-y border-slate-100 group-hover:shadow-md transition-all">32 ~ 70</td>
-                      <td className="bg-white px-6 py-5 text-center font-semibold text-slate-600 shadow-sm border-y border-slate-100 group-hover:shadow-md transition-all">39문항</td>
-                      <td className="rounded-r-2xl bg-white px-6 py-5 text-slate-600 shadow-sm border-y border-r border-slate-100 group-hover:shadow-md transition-all">짧은 대화 (2~3인)</td>
-                    </tr>
-                    {/* Part 4 */}
-                    <tr className="group transition-all hover:-translate-y-1">
-                      <td className="rounded-l-2xl bg-white px-6 py-5 font-bold text-slate-700 shadow-sm border-y border-l border-slate-100 group-hover:shadow-md transition-all text-center">Part 4</td>
-                      <td className="bg-white px-6 py-5 text-center font-mono text-slate-500 shadow-sm border-y border-slate-100 group-hover:shadow-md transition-all">71 ~ 100</td>
-                      <td className="bg-white px-6 py-5 text-center font-semibold text-slate-600 shadow-sm border-y border-slate-100 group-hover:shadow-md transition-all">30문항</td>
-                      <td className="rounded-r-2xl bg-white px-6 py-5 text-slate-600 shadow-sm border-y border-r border-slate-100 group-hover:shadow-md transition-all">짧은 담화 (1인)</td>
+                      {[1, 2, 3, 4].map((num) => (
+                        <th key={num} className="bg-gradient-to-b from-blue-700 to-blue-600 rounded-t-3xl p-6 text-center shadow-md">
+                          <div className="flex flex-row items-center justify-center gap-2">
+                            <span className="text-xl font-bold text-white tracking-tight">part</span>
+                            <span className="text-xl font-bold text-white leading-none">{num}</span>
+                          </div>
+                        </th>
+                      ))}
+                      {[5, 6, 7].map((num) => (
+                        <th key={num} className="bg-gradient-to-b from-indigo-700 to-indigo-600 rounded-t-3xl p-6 text-center shadow-md">
+                          <div className="flex flex-row items-center justify-center gap-2">
+                            <span className="text-xl font-bold text-white tracking-tight">part</span>
+                            <span className="text-xl font-bold text-white leading-none">{num}</span>
+                          </div>
+                        </th>
+                      ))}
                     </tr>
 
-                    {/* Spacer Row */}
-                    <tr><td className="h-4"></td></tr>
+                    {/* Area Row */}
+                    <tr>
+                      <th className="bg-white border border-slate-100 rounded-none p-6 text-center shadow-sm">
+                        <span className="text-xl font-black text-slate-700">영역</span>
+                      </th>
+                      <td colSpan={4} className="bg-blue-300 p-4 text-center border-x border-white/50 shadow-sm first:rounded-bl-xl last:rounded-br-xl">
+                        <span className="text-xl font-black text-blue-800 tracking-widest">LC</span>
+                      </td>
+                      <td colSpan={3} className="bg-indigo-300 p-4 text-center border-x border-white/50 shadow-sm first:rounded-bl-xl last:rounded-br-xl">
+                        <span className="text-xl font-black text-indigo-800 tracking-widest">RC</span>
+                      </td>
+                    </tr>
 
-                    {/* Part 5 */}
-                    <tr className="group transition-all hover:-translate-y-1">
-                      <td className="rounded-2xl bg-white px-6 py-5 text-center font-black text-slate-800 shadow-sm border border-slate-100 group-hover:shadow-md transition-all" rowSpan={3}>
-                        <div className="flex flex-col items-center justify-center gap-1">
-                          <span className="text-xl">RC</span>
-                          <span className="rounded-full bg-rose-100 px-2.5 py-0.5 text-[10px] font-bold text-rose-700">읽기</span>
+                    {/* Question Range Row */}
+                    <tr>
+                      <th className="bg-white border border-slate-100 rounded-none p-6 text-center shadow-sm">
+                        <span className="text-lg font-black text-slate-700 leading-tight">문항 번호</span>
+                      </th>
+                      {[
+                        "001-006", "007-031", "032-070", "071-100",
+                        "101-130", "131-146", "147-200"
+                      ].map((range, idx) => (
+                        <td key={idx} className={`p-5 text-center ${idx < 4 ? 'bg-blue-200' : 'bg-indigo-200'} border-x border-white/50 shadow-sm`}>
+                          <span className="font-mono text-xl font-bold text-slate-800 tracking-tighter">{range}</span>
+                        </td>
+                      ))}
+                    </tr>
+
+                    {/* Question Count Row */}
+                    <tr>
+                      <th className="bg-white border border-slate-100 rounded-none p-6 text-center shadow-sm">
+                        <span className="text-xl font-black text-slate-700 leading-tight">문항 수</span>
+                      </th>
+                      {["6", "25", "39", "30", "30", "16", "54"].map((count, idx) => (
+                        <td key={idx} className={`p-5 text-center ${idx < 4 ? 'bg-blue-100' : 'bg-indigo-100'} border-x border-white/50 shadow-sm`}>
+                          <span className="text-3xl font-black text-slate-800">{count}</span>
+                          <span className={`text-xs font-black ml-1 uppercase ${idx < 4 ? 'text-blue-700' : 'text-indigo-700'}`}>Q</span>
+                        </td>
+                      ))}
+                    </tr>
+
+                    {/* Content Row */}
+                    <tr>
+                      <th className="bg-white border border-slate-100 rounded-none p-6 text-center shadow-sm">
+                        <span className="text-xl font-black text-slate-700 leading-tight">주요 내용</span>
+                      </th>
+                      {[
+                        "사진 묘사", "질의 응답", "짧은 대화", "짧은 담화",
+                        "단문 공란", "장문 공란", "전체 독해"
+                      ].map((content, idx) => (
+                        <td key={idx} className={`p-5 text-center align-middle ${idx < 4 ? 'bg-blue-50' : 'bg-indigo-50'} border-x border-white/50 shadow-sm`}>
+                          <span className="text-base font-bold text-slate-700 leading-tight block whitespace-pre-line">{content}</span>
+                        </td>
+                      ))}
+                    </tr>
+
+                    {/* Score/Time Hybrid Row */}
+                    <tr>
+                      <th className="bg-white border border-slate-100 rounded-none p-6 text-center shadow-sm">
+                        <span className="text-xl font-black text-slate-700 leading-tight">배점/시간</span>
+                      </th>
+                      <td colSpan={4} className="bg-gradient-to-br from-blue-50 to-blue-100 border-2 border-blue-200 rounded-none p-6 text-center shadow-md">
+                        <div className="flex items-center justify-around">
+                          <div className="text-center">
+                            <span className="block text-[10px] font-black text-blue-400 uppercase">Duration</span>
+                            <span className="text-2xl font-black text-blue-600 italic">45<span className="text-xs not-italic ml-0.5">m</span></span>
+                          </div>
+                          <div className="w-px h-8 bg-slate-100" />
+                          <div className="text-center">
+                            <span className="block text-[10px] font-black text-blue-400 uppercase">Max Score</span>
+                            <span className="text-2xl font-black text-blue-600 italic">495<span className="text-xs not-italic ml-0.5">pts</span></span>
+                          </div>
                         </div>
                       </td>
-                      <td className="rounded-l-2xl bg-white px-6 py-5 font-bold text-slate-700 shadow-sm border-y border-l border-slate-100 group-hover:shadow-md transition-all text-center">Part 5</td>
-                      <td className="bg-white px-6 py-5 text-center font-mono text-slate-500 shadow-sm border-y border-slate-100 group-hover:shadow-md transition-all">101 ~ 130</td>
-                      <td className="bg-white px-6 py-5 text-center font-semibold text-slate-600 shadow-sm border-y border-slate-100 group-hover:shadow-md transition-all">30문항</td>
-                      <td className="bg-white px-6 py-5 text-slate-600 shadow-sm border-y border-slate-100 group-hover:shadow-md transition-all">단문 공란 채우기</td>
-                      <td className="rounded-2xl bg-white px-6 py-5 text-center font-bold text-slate-800 shadow-sm border border-slate-100 group-hover:shadow-md transition-all" rowSpan={3}>
-                        75분
-                      </td>
-                      <td className="rounded-2xl bg-white px-6 py-5 text-center font-black text-emerald-500 shadow-sm border border-slate-100 group-hover:shadow-md transition-all" rowSpan={3}>
-                        <div className="flex flex-col items-center gap-1">
-                          <span>5</span>
-                          <div className="h-0.5 w-3 bg-emerald-200"></div>
-                          <span>495점</span>
+                      <td colSpan={3} className="bg-gradient-to-br from-indigo-50 to-indigo-100 border-2 border-indigo-200 rounded-none p-6 text-center shadow-md">
+                        <div className="flex items-center justify-around">
+                          <div className="text-center">
+                            <span className="block text-[10px] font-black text-indigo-400 uppercase">Duration</span>
+                            <span className="text-2xl font-black text-indigo-600 italic">75<span className="text-xs not-italic ml-0.5">m</span></span>
+                          </div>
+                          <div className="w-px h-8 bg-slate-100" />
+                          <div className="text-center">
+                            <span className="block text-[10px] font-black text-indigo-400 uppercase">Max Score</span>
+                            <span className="text-2xl font-black text-indigo-600 italic">495<span className="text-xs not-italic ml-0.5">pts</span></span>
+                          </div>
                         </div>
                       </td>
-                    </tr>
-                    {/* Part 6 */}
-                    <tr className="group transition-all hover:-translate-y-1">
-                      <td className="rounded-l-2xl bg-white px-6 py-5 font-bold text-slate-700 shadow-sm border-y border-l border-slate-100 group-hover:shadow-md transition-all text-center">Part 6</td>
-                      <td className="bg-white px-6 py-5 text-center font-mono text-slate-500 shadow-sm border-y border-slate-100 group-hover:shadow-md transition-all">131 ~ 146</td>
-                      <td className="bg-white px-6 py-5 text-center font-semibold text-slate-600 shadow-sm border-y border-slate-100 group-hover:shadow-md transition-all">16문항</td>
-                      <td className="rounded-r-2xl bg-white px-6 py-5 text-slate-600 shadow-sm border-y border-r border-slate-100 group-hover:shadow-md transition-all">장문 공란 채우기</td>
-                    </tr>
-                    {/* Part 7 */}
-                    <tr className="group transition-all hover:-translate-y-1">
-                      <td className="rounded-l-2xl bg-white px-6 py-5 font-bold text-slate-700 shadow-sm border-y border-l border-slate-100 group-hover:shadow-md transition-all text-center">Part 7</td>
-                      <td className="bg-white px-6 py-5 text-center font-mono text-slate-500 shadow-sm border-y border-slate-100 group-hover:shadow-md transition-all">147 ~ 200</td>
-                      <td className="bg-white px-6 py-5 text-center font-semibold text-slate-600 shadow-sm border-y border-slate-100 group-hover:shadow-md transition-all">54문항</td>
-                      <td className="rounded-r-2xl bg-white px-6 py-5 text-slate-600 shadow-sm border-y border-r border-slate-100 group-hover:shadow-md transition-all">독해 (단일/이중/삼중)</td>
-                    </tr>
-
-                    {/* Spacer Row */}
-                    <tr><td className="h-4"></td></tr>
-
-                    <tr className="group">
-                      <td className="rounded-2xl bg-slate-900 px-6 py-5 text-center font-black text-white shadow-lg shadow-slate-900/20">총계</td>
-                      <td className="rounded-2xl bg-slate-900 border-l border-slate-700/50 px-6 py-5 text-center font-bold text-slate-100 shadow-lg shadow-slate-900/20">7개 파트</td>
-                      <td className="rounded-2xl bg-slate-900 px-6 py-5 text-center font-mono text-slate-300 shadow-lg shadow-slate-900/20">1 ~ 200</td>
-                      <td className="rounded-2xl bg-slate-900 px-6 py-5 text-center font-black text-white shadow-lg shadow-slate-900/20">총 200문항</td>
-                      <td className="rounded-2xl bg-slate-900 px-6 py-5 text-center text-slate-300 font-medium shadow-lg shadow-slate-900/20">비즈니스 및 일상</td>
-                      <td className="rounded-2xl bg-amber-500 px-6 py-5 text-center font-black text-white shadow-lg shadow-amber-500/30">약 120분</td>
-                      <td className="rounded-2xl bg-emerald-500 px-6 py-5 text-center font-black text-white shadow-lg shadow-emerald-500/30">990점</td>
                     </tr>
                   </tbody>
                 </table>
@@ -388,8 +377,8 @@ export default function Home() {
               </Button>
             </div>
           </section>
-        </div>
-      </div>
+        </div >
+      </div >
 
       <footer className="w-full border-t border-gray-200 bg-white py-8 text-center text-sm text-gray-500">
         <p>
@@ -397,6 +386,6 @@ export default function Home() {
           Reserved.
         </p>
       </footer>
-    </main>
+    </main >
   );
 }

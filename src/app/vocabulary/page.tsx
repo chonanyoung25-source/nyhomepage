@@ -276,135 +276,205 @@ export default function VocabularyPage() {
         </div>
       </section>
 
+      {/* Full-width Section Divider */}
+      <div className="w-full h-px bg-slate-200 relative z-20" />
+
       {/* === CONTENT SECTIONS (Restored) === */}
 
       {/* 1. Core Learning */}
-      <section id="core-learning" className="relative py-32 z-10 px-6 max-w-7xl mx-auto border-t border-slate-200 bg-white overflow-hidden rounded-[80px] my-20 shadow-sm">
+      <section id="core-learning" className="relative h-screen w-full flex flex-col justify-center items-center z-10 px-6 bg-white overflow-hidden">
         <div className="absolute top-0 left-1/4 w-[800px] h-[800px] bg-blue-600/5 rounded-full blur-[120px] pointer-events-none animate-pulse" style={{ animationDuration: '8s' }} />
-        <div className="mb-20 relative z-10">
-          <p className="text-blue-600 font-mono text-[10px] tracking-[0.3em] uppercase mb-4 opacity-80">Phase 01</p>
-          <h2 className="text-4xl md:text-6xl font-black tracking-tighter mb-8 leading-[0.9]">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-cyan-600 to-blue-600 animate-gradient-x bg-[length:200%_auto] drop-shadow-[0_0_25px_rgba(37,99,235,0.2)]">CORE LEARNING</span>
-          </h2>
-          <p className="text-[#1e3a8a] font-bold text-lg tracking-wide max-w-xl leading-relaxed">
-            각 Phase를 완료하고 완벽한 Core로 등극해 보세요.
-          </p>
-        </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 relative z-10">
-          {/* Card 1: Core Vocabulary */}
-          <Link href="/core-learning" className="group relative min-h-[400px] rounded-[40px] transition-all duration-500 hover:-translate-y-2">
-            <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-[42px] blur opacity-30 group-hover:opacity-100 transition duration-500" />
-            <div className="relative h-full bg-white rounded-[40px] overflow-hidden p-8 md:p-12 flex flex-col justify-between border border-slate-100">
-              {/* Content logic restored from previous steps... */}
-              <div className="absolute -right-12 -bottom-12 opacity-10 group-hover:opacity-30 transition-all duration-700 transform group-hover:scale-110 group-hover:rotate-12">
-                <BookOpen className="w-80 h-80 text-blue-500" />
-              </div>
-              <div className="z-10">
-                <h3 className="text-4xl md:text-5xl font-black mb-4 text-[#1e3a8a]">Core Vocabulary</h3>
-                <p className="text-slate-600 font-medium text-lg leading-relaxed max-w-sm group-hover:text-slate-900 transition-colors">TOEIC 빈출 어휘 1,350개를 완벽하게 마스터하세요.</p>
-                <div className="mt-8">
-                  <div className="inline-flex items-center gap-3 px-6 py-3 rounded-xl bg-blue-50 border border-blue-200 group-hover:bg-blue-100 transition-all">
-                    <span className="text-sm font-bold text-blue-700 tracking-widest uppercase">Start Learning</span>
-                    <ArrowRight className="w-4 h-4 text-blue-700" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </Link>
+        <div className="w-full max-w-7xl mx-auto">
+          <div className="mb-20 relative z-10">
+            <p className="text-blue-600 font-mono text-[10px] tracking-[0.3em] uppercase mb-4 opacity-80">Phase 01</p>
+            <h2 className="text-4xl md:text-6xl font-black tracking-tighter mb-8 leading-[0.9]">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-cyan-600 to-blue-600 animate-gradient-x bg-[length:200%_auto] drop-shadow-[0_0_25px_rgba(37,99,235,0.2)]">CORE LEARNING</span>
+            </h2>
+            <p className="text-[#1e3a8a] font-bold text-lg tracking-wide max-w-xl leading-relaxed">
+              각 Phase를 완료하고 완벽한 Core로 등극해 보세요.
+            </p>
+          </div>
 
-          {/* Card 2: Confusable Words */}
-          <Link href="/confusable-words" className="group relative min-h-[400px] rounded-[40px] transition-all duration-500 hover:-translate-y-2">
-            <div className="absolute -inset-0.5 bg-gradient-to-r from-cyan-500 to-teal-500 rounded-[42px] blur opacity-30 group-hover:opacity-100 transition duration-500" />
-            <div className="relative h-full bg-white rounded-[40px] overflow-hidden p-8 md:p-12 flex flex-col justify-between border border-slate-100">
-              <div className="absolute -right-12 -bottom-12 opacity-10 group-hover:opacity-30 transition-all duration-700 transform group-hover:scale-110 group-hover:-rotate-12">
-                <Brain className="w-80 h-80 text-cyan-500" />
-              </div>
-              <div className="z-10">
-                <h3 className="text-4xl md:text-5xl font-black mb-4 text-[#1e3a8a]">Confusable Words</h3>
-                <p className="text-slate-600 font-medium text-lg leading-relaxed max-w-sm group-hover:text-slate-900 transition-colors">의미가 비슷해 헷갈리는 단어들을 명확히 구분하세요.</p>
-                <div className="mt-8">
-                  <div className="inline-flex items-center gap-3 px-6 py-3 rounded-xl bg-cyan-50 border border-cyan-200 group-hover:bg-cyan-100 transition-all">
-                    <span className="text-sm font-bold text-cyan-700 tracking-widest uppercase">Master Now</span>
-                    <ArrowRight className="w-4 h-4 text-cyan-700" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </Link>
-        </div>
-      </section>
-
-      {/* 2. Testing & Review */}
-      <section id="testing-review" className="relative py-32 z-10 px-6 max-w-7xl mx-auto border-t border-slate-200 bg-white overflow-hidden rounded-[80px] my-20 shadow-sm">
-        <div className="absolute top-1/4 right-0 w-[800px] h-[800px] bg-purple-600/5 rounded-full blur-[120px] pointer-events-none animate-pulse" />
-        <div className="mb-20 relative z-10">
-          <p className="text-purple-600 font-mono text-[10px] tracking-[0.3em] uppercase mb-4 opacity-80">Phase 02</p>
-          <h2 className="text-4xl md:text-6xl font-black tracking-tighter mb-8 leading-[0.9]">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-fuchsia-600 to-purple-600 animate-gradient-x bg-[length:200%_auto]">TESTING & REVIEW</span>
-          </h2>
-          <p className="text-[#1e3a8a] font-bold text-lg tracking-wide max-w-xl leading-relaxed">실전 감각을 키우는 체계적인 복습 시스템을 경험하세요.</p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 relative z-10 max-w-4xl">
-          {testingSubCards.map((card, idx) => {
-            const styles: { [key: string]: any } = {
-              purple: { iconText: 'text-purple-600', iconBg: 'bg-purple-50', btn: 'bg-purple-50 border-purple-200 text-purple-700' },
-              pink: { iconText: 'text-pink-600', iconBg: 'bg-pink-50', btn: 'bg-pink-50 border-pink-200 text-pink-700' },
-              indigo: { iconText: 'text-indigo-600', iconBg: 'bg-indigo-50', btn: 'bg-indigo-50 border-indigo-200 text-indigo-700' }
-            };
-            const s = styles[card.color] || styles['purple'];
-            return (
-              <Link key={idx} href={card.href} className="group relative min-h-[380px] rounded-[32px] transition-all duration-500 hover:-translate-y-2">
-                <div className="relative h-full bg-white rounded-[32px] overflow-hidden p-8 flex flex-col justify-between border border-slate-100 shadow-sm">
-                  <div className="z-10">
-                    <div className={`w-14 h-14 rounded-2xl ${s.iconBg} flex items-center justify-center mb-6 shadow-sm border border-slate-50`}>
-                      <card.icon className={`w-7 h-7 ${s.iconText}`} />
-                    </div>
-                    <h3 className="text-2xl font-black mb-3 text-slate-800">{card.title}</h3>
-                    <p className="text-slate-500 font-medium text-sm leading-relaxed">{card.subtitle}</p>
-                  </div>
-                  <div className={`mt-auto inline-flex items-center gap-3 px-6 py-3 rounded-xl border group-hover:bg-slate-900 group-hover:text-white transition-all duration-300 font-bold uppercase tracking-widest text-xs ${s.btn}`}>
-                    <span>Start Test</span>
-                    <ArrowRight className="w-4 h-4" />
-                  </div>
-                </div>
-              </Link>
-            );
-          })}
-        </div>
-      </section>
-
-      {/* 3. Personalization */}
-      <section id="personalization" className="relative py-32 z-10 px-6 max-w-7xl mx-auto border-t border-slate-200 bg-white overflow-hidden rounded-[80px] my-20 shadow-sm">
-        <div className="mb-20 relative z-10">
-          <p className="text-blue-600 font-mono text-[10px] tracking-[0.3em] uppercase mb-4 opacity-80">Phase 03</p>
-          <h2 className="text-4xl md:text-6xl font-black tracking-tighter mb-8 leading-[0.9]">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-violet-600 animate-gradient-x bg-[length:200%_auto]">PERSONALIZATION</span>
-          </h2>
-          <p className="text-[#1e3a8a] font-bold text-lg tracking-wide max-w-xl leading-relaxed">오직 당신만을 위한 맞춤형 학습 데이터를 제공합니다.</p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
-          {personalizationSubCards.map((card, idx) => (
-            <Link key={idx} href={card.href} className="group relative min-h-[380px] rounded-[40px] transition-all duration-500 hover:-translate-y-2">
-              <div className="relative h-full bg-white rounded-[40px] overflow-hidden p-8 flex flex-col justify-between border border-slate-100 shadow-sm">
-                <div className="flex justify-between items-start z-10 mb-10">
-                  <div className="w-14 h-14 rounded-2xl bg-blue-50 flex items-center justify-center shadow-sm">
-                    <card.icon className="w-7 h-7 text-blue-600" />
-                  </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 relative z-10">
+            {/* Card 1: Core Vocabulary */}
+            <Link href="/core-learning" className="group relative min-h-[400px] rounded-[40px] transition-all duration-500 hover:-translate-y-2">
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-[42px] blur opacity-30 group-hover:opacity-100 transition duration-500" />
+              <div className="relative h-full bg-white rounded-[40px] overflow-hidden p-8 md:p-12 flex flex-col justify-between border border-slate-100">
+                <div className="absolute -right-12 -bottom-12 opacity-10 group-hover:opacity-30 transition-all duration-700 transform group-hover:scale-110 group-hover:rotate-12">
+                  <BookOpen className="w-80 h-80 text-blue-500" />
                 </div>
                 <div className="z-10">
-                  <h3 className="text-2xl font-black mb-3 text-[#1e3a8a]">{card.title}</h3>
-                  <p className="text-slate-500 font-medium text-sm leading-relaxed mb-6">{card.subtitle}</p>
-                  <div className="inline-flex items-center gap-2 text-[10px] font-bold text-blue-700 uppercase tracking-widest group-hover:translate-x-1 transition-all">
-                    <span>Explore</span>
-                    <ArrowRight className="w-3 h-3" />
+                  <h3 className="text-4xl md:text-5xl font-black mb-4 text-[#1e3a8a]">Core Vocabulary</h3>
+                  <p className="text-slate-600 font-medium text-lg leading-relaxed max-w-sm group-hover:text-slate-900 transition-colors">TOEIC 빈출 어휘 1,350개를 완벽하게 마스터하세요.</p>
+                  <div className="mt-8">
+                    <div className="inline-flex items-center gap-3 px-6 py-3 rounded-xl bg-blue-50 border border-blue-200 group-hover:bg-blue-100 transition-all">
+                      <span className="text-sm font-bold text-blue-700 tracking-widest uppercase">Start Learning</span>
+                      <ArrowRight className="w-4 h-4 text-blue-700" />
+                    </div>
                   </div>
                 </div>
               </div>
             </Link>
-          ))}
+
+            {/* Card 2: Confusable Words */}
+            <Link href="/confusable-words" className="group relative min-h-[400px] rounded-[40px] transition-all duration-500 hover:-translate-y-2">
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-cyan-500 to-teal-500 rounded-[42px] blur opacity-30 group-hover:opacity-100 transition duration-500" />
+              <div className="relative h-full bg-white rounded-[40px] overflow-hidden p-8 md:p-12 flex flex-col justify-between border border-slate-100">
+                <div className="absolute -right-12 -bottom-12 opacity-10 group-hover:opacity-30 transition-all duration-700 transform group-hover:scale-110 group-hover:-rotate-12">
+                  <Brain className="w-80 h-80 text-cyan-500" />
+                </div>
+                <div className="z-10">
+                  <h3 className="text-4xl md:text-5xl font-black mb-4 text-[#1e3a8a]">Confusable Words</h3>
+                  <p className="text-slate-600 font-medium text-lg leading-relaxed max-w-sm group-hover:text-slate-900 transition-colors">의미가 비슷해 헷갈리는 단어들을 명확히 구분하세요.</p>
+                  <div className="mt-8">
+                    <div className="inline-flex items-center gap-3 px-6 py-3 rounded-xl bg-cyan-50 border border-cyan-200 group-hover:bg-cyan-100 transition-all">
+                      <span className="text-sm font-bold text-cyan-700 tracking-widest uppercase">Master Now</span>
+                      <ArrowRight className="w-4 h-4 text-cyan-700" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Section Divider */}
+      <div className="w-full h-px bg-slate-200 relative z-20" />
+
+      {/* 2. Testing & Review */}
+      <section id="testing-review" className="relative h-screen w-full flex flex-col justify-center items-center z-10 px-6 bg-white overflow-hidden">
+        <div className="absolute top-1/4 right-0 w-[800px] h-[800px] bg-purple-600/5 rounded-full blur-[120px] pointer-events-none animate-pulse" />
+
+        <div className="w-full max-w-7xl mx-auto">
+          <div className="mb-20 relative z-10">
+            <p className="text-purple-600 font-mono text-[10px] tracking-[0.3em] uppercase mb-4 opacity-80">Phase 02</p>
+            <h2 className="text-4xl md:text-6xl font-black tracking-tighter mb-8 leading-[0.9]">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-fuchsia-600 to-purple-600 animate-gradient-x bg-[length:200%_auto]">TESTING & REVIEW</span>
+            </h2>
+            <p className="text-[#1e3a8a] font-bold text-lg tracking-wide max-w-xl leading-relaxed">실전 감각을 키우는 체계적인 복습 시스템을 경험하세요.</p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 relative z-10">
+            {/* Card 1: Flashcards */}
+            <Link href="/flashcards/selection" className="group relative min-h-[400px] rounded-[40px] transition-all duration-500 hover:-translate-y-2">
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-[42px] blur opacity-30 group-hover:opacity-100 transition duration-500" />
+              <div className="relative h-full bg-white rounded-[40px] overflow-hidden p-8 md:p-12 flex flex-col justify-between border border-slate-100">
+                <div className="absolute -right-12 -bottom-12 opacity-10 group-hover:opacity-30 transition-all duration-700 transform group-hover:scale-110 group-hover:rotate-12">
+                  <Layers className="w-80 h-80 text-purple-500" />
+                </div>
+                <div className="z-10">
+                  <h3 className="text-4xl md:text-5xl font-black mb-4 text-[#1e3a8a]">Flashcards</h3>
+                  <p className="text-slate-600 font-medium text-lg leading-relaxed max-w-sm group-hover:text-slate-900 transition-colors">반복 학습으로 어휘를 완벽하게 장기 기억으로 완성하세요.</p>
+                  <div className="mt-8">
+                    <div className="inline-flex items-center gap-3 px-6 py-3 rounded-xl bg-purple-50 border border-purple-200 group-hover:bg-purple-100 transition-all">
+                      <span className="text-sm font-bold text-purple-700 tracking-widest uppercase">Start Review</span>
+                      <ArrowRight className="w-4 h-4 text-purple-700" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: AI Vocab Quiz */}
+            <Link href="/vocabulary-quiz" className="group relative min-h-[400px] rounded-[40px] transition-all duration-500 hover:-translate-y-2">
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-fuchsia-500 to-pink-500 rounded-[42px] blur opacity-30 group-hover:opacity-100 transition duration-500" />
+              <div className="relative h-full bg-white rounded-[40px] overflow-hidden p-8 md:p-12 flex flex-col justify-between border border-slate-100">
+                <div className="absolute -right-12 -bottom-12 opacity-10 group-hover:opacity-30 transition-all duration-700 transform group-hover:scale-110 group-hover:-rotate-12">
+                  <Sparkles className="w-80 h-80 text-fuchsia-500" />
+                </div>
+                <div className="z-10">
+                  <h3 className="text-4xl md:text-5xl font-black mb-4 text-[#1e3a8a]">AI Vocab Quiz</h3>
+                  <p className="text-slate-600 font-medium text-lg leading-relaxed max-w-sm group-hover:text-slate-900 transition-colors">AI가 생성하는 고난도 퀴즈로 실력을 테스트해 보세요.</p>
+                  <div className="mt-8">
+                    <div className="inline-flex items-center gap-3 px-6 py-3 rounded-xl bg-fuchsia-50 border border-fuchsia-200 group-hover:bg-fuchsia-100 transition-all">
+                      <span className="text-sm font-bold text-fuchsia-700 tracking-widest uppercase">Take Quiz</span>
+                      <ArrowRight className="w-4 h-4 text-fuchsia-700" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Section Divider */}
+      <div className="w-full h-px bg-slate-200 relative z-20" />
+
+      {/* 3. Personalization */}
+      <section id="personalization" className="relative h-screen w-full flex flex-col justify-center items-center z-10 px-6 bg-white overflow-hidden">
+        <div className="w-full max-w-7xl mx-auto">
+          <div className="mb-20 relative z-10">
+            <p className="text-blue-600 font-mono text-[10px] tracking-[0.3em] uppercase mb-4 opacity-80">Phase 03</p>
+            <h2 className="text-4xl md:text-6xl font-black tracking-tighter mb-8 leading-[0.9]">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-violet-600 animate-gradient-x bg-[length:200%_auto]">PERSONALIZATION</span>
+            </h2>
+            <p className="text-[#1e3a8a] font-bold text-lg tracking-wide max-w-xl leading-relaxed">오직 당신만을 위한 맞춤형 학습 데이터를 제공합니다.</p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 relative z-10">
+            {/* Card 1: Bookmark Mgmt */}
+            <Link href="/bookmarks" className="group relative min-h-[400px] rounded-[40px] transition-all duration-500 hover:-translate-y-2">
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-[42px] blur opacity-30 group-hover:opacity-100 transition duration-500" />
+              <div className="relative h-full bg-white rounded-[40px] overflow-hidden p-8 flex flex-col justify-between border border-slate-100">
+                <div className="absolute -right-12 -bottom-12 opacity-10 group-hover:opacity-30 transition-all duration-700 transform group-hover:scale-110 group-hover:rotate-12">
+                  <Bookmark className="w-64 h-64 text-cyan-500" />
+                </div>
+                <div className="z-10">
+                  <h3 className="text-3xl font-black mb-4 text-[#1e3a8a]">Bookmark Mgmt</h3>
+                  <p className="text-slate-600 font-medium text-lg leading-relaxed group-hover:text-slate-900 transition-colors">나만의 단어장으로 취약한 부분을 집중 보완하세요.</p>
+                  <div className="mt-8">
+                    <div className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-cyan-50 border border-cyan-200 group-hover:bg-cyan-100 transition-all">
+                      <span className="text-sm font-bold text-cyan-700 tracking-widest uppercase">Explore</span>
+                      <ArrowRight className="w-4 h-4 text-cyan-700" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Dashboard */}
+            <Link href="/dashboard" className="group relative min-h-[400px] rounded-[40px] transition-all duration-500 hover:-translate-y-2">
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-indigo-500 to-violet-500 rounded-[42px] blur opacity-30 group-hover:opacity-100 transition duration-500" />
+              <div className="relative h-full bg-white rounded-[40px] overflow-hidden p-8 flex flex-col justify-between border border-slate-100">
+                <div className="absolute -right-12 -bottom-12 opacity-10 group-hover:opacity-30 transition-all duration-700 transform group-hover:scale-110 group-hover:-rotate-12">
+                  <GraduationCap className="w-64 h-64 text-indigo-500" />
+                </div>
+                <div className="z-10">
+                  <h3 className="text-3xl font-black mb-4 text-[#1e3a8a]">Learning Stats</h3>
+                  <p className="text-slate-600 font-medium text-lg leading-relaxed group-hover:text-slate-900 transition-colors">데이터로 분석한 나의 어휘 학습 현황을 확인하세요.</p>
+                  <div className="mt-8">
+                    <div className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-indigo-50 border border-indigo-200 group-hover:bg-indigo-100 transition-all">
+                      <span className="text-sm font-bold text-indigo-700 tracking-widest uppercase">View Stats</span>
+                      <ArrowRight className="w-4 h-4 text-indigo-700" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 3: Smart Search */}
+            <Link href="/smart-search" className="group relative min-h-[400px] rounded-[40px] transition-all duration-500 hover:-translate-y-2">
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-violet-500 to-fuchsia-500 rounded-[42px] blur opacity-30 group-hover:opacity-100 transition duration-500" />
+              <div className="relative h-full bg-white rounded-[40px] overflow-hidden p-8 flex flex-col justify-between border border-slate-100">
+                <div className="absolute -right-12 -bottom-12 opacity-10 group-hover:opacity-30 transition-all duration-700 transform group-hover:scale-110 group-hover:rotate-12">
+                  <Search className="w-64 h-64 text-violet-500" />
+                </div>
+                <div className="z-10">
+                  <h3 className="text-3xl font-black mb-4 text-[#1e3a8a]">Smart Search</h3>
+                  <p className="text-slate-600 font-medium text-lg leading-relaxed group-hover:text-slate-900 transition-colors">방대한 데이터를 빠르게 검색하고 학습에 활용하세요.</p>
+                  <div className="mt-8">
+                    <div className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-violet-50 border border-violet-200 group-hover:bg-violet-100 transition-all">
+                      <span className="text-sm font-bold text-violet-700 tracking-widest uppercase">Search Now</span>
+                      <ArrowRight className="w-4 h-4 text-violet-700" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -439,6 +509,6 @@ export default function VocabularyPage() {
         }
         html { scroll-behavior: smooth; }
       `}</style>
-    </main>
+    </main >
   );
 }
