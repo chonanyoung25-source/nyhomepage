@@ -101,7 +101,7 @@ export default function ReadingPage() {
                         <Link href="/" className="text-white/60 hover:text-white font-medium text-lg transition-colors tracking-wide">Home</Link>
                         <Link href="/listening" className="text-white/60 hover:text-white font-medium text-lg transition-colors tracking-wide">Listening</Link>
                         <Link href="/vocabulary" className="text-white/60 hover:text-white font-medium text-lg transition-colors tracking-wide">Vocabulary</Link>
-                        <Link href="/reading/verbal" className="text-white/60 hover:text-white font-medium text-lg transition-colors tracking-wide">Verbal</Link>
+                        <Link href="https://text-completion-v.vercel.app/" target="_blank" className="text-white/60 hover:text-white font-medium text-lg transition-colors tracking-wide">Verbal</Link>
                     </div>
                     <button className="px-7 py-2.5 bg-white/10 hover:bg-white/20 backdrop-blur-xl border border-white/10 rounded-full text-white font-medium transition-all shadow-xl hover:shadow-blue-500/20 hover:-translate-y-0.5">
                         Log in
@@ -730,7 +730,7 @@ export default function ReadingPage() {
                             </div>
 
                             {/* Card 3 - Light Gray Background */}
-                            <Link href="/reading/verbal" className="bg-gradient-to-t from-blue-100 to-slate-100 rounded-3xl p-20 shadow-[inset_0_8px_20px_rgba(0,0,0,0.15)] relative overflow-hidden border border-slate-200 min-h-[400px] hover-card-lift group block">
+                            <Link href="https://text-completion-v.vercel.app/" target="_blank" className="bg-gradient-to-t from-blue-100 to-slate-100 rounded-3xl p-20 shadow-[inset_0_8px_20px_rgba(0,0,0,0.15)] relative overflow-hidden border border-slate-200 min-h-[400px] hover-card-lift group block">
                                 <div className="flex items-center gap-4 mb-6">
                                     <div className="w-12 h-12 bg-slate-300 rounded-full flex items-center justify-center shadow-lg transition-transform duration-500 group-hover:scale-110">
                                         <span className="text-blue-900 text-2xl font-black">V</span>
